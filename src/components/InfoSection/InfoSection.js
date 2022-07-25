@@ -1,11 +1,27 @@
 import React from "react";
 
-import { InfoSec } from "./InfoSection.Elements";
+import {
+  InfoSec,
+  InfoRow,
+  InfoColunm,
+  TextWrapper,
+} from "./InfoSection.Elements";
+import { Container } from "../../globalStyles";
 
-const InfoSection = ({ lightBg }) => {
+const InfoSection = ({ lightBg, imgStart, lightTopLine }) => {
   return (
     <>
-      <InfoSec lightBg={lightBg}>h1</InfoSec>
+      <InfoSec lightBg={lightBg}>
+        <Container>
+          <InfoRow imgStart={imgStart}>
+            <InfoColunm>
+              <TextWrapper>
+                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+              </TextWrapper>
+            </InfoColunm>
+          </InfoRow>
+        </Container>
+      </InfoSec>
     </>
   );
 };
