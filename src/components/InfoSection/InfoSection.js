@@ -17,6 +17,13 @@ const InfoSection = ({ lightBg, imgStart, lightTopLine }) => {
             <InfoColunm>
               <TextWrapper>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                <Link to="/sign-up">
+                  <Button big fontBig primary={primary}>
+                    {buttonLabel}
+                  </Button>
+                </Link>
               </TextWrapper>
             </InfoColunm>
           </InfoRow>
