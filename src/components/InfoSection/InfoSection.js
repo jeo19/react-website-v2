@@ -5,10 +5,25 @@ import {
   InfoRow,
   InfoColunm,
   TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
 } from "./InfoSection.Elements";
-import { Container } from "../../globalStyles";
+import { Link } from "react-router-dom";
+import { Container, Button } from "../../globalStyles";
 
-const InfoSection = ({ lightBg, imgStart, lightTopLine }) => {
+const InfoSection = ({
+  primary,
+  lightBg,
+  imgStart,
+  lightTopLine,
+  lightText,
+  lightTextDesc,
+  topLine,
+  headLine,
+  description,
+  buttonLabel,
+}) => {
   return (
     <>
       <InfoSec lightBg={lightBg}>
