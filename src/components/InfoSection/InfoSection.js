@@ -8,6 +8,8 @@ import {
   TopLine,
   Heading,
   Subtitle,
+  ImgWrapper,
+  Img,
 } from "./InfoSection.Elements";
 import { Link } from "react-router-dom";
 import { Container, Button } from "../../globalStyles";
@@ -23,6 +25,9 @@ const InfoSection = ({
   headLine,
   description,
   buttonLabel,
+  img,
+  alt,
+  start,
 }) => {
   return (
     <>
@@ -40,6 +45,11 @@ const InfoSection = ({
                   </Button>
                 </Link>
               </TextWrapper>
+            </InfoColunm>
+            <InfoColunm>
+              <ImgWrapper start={start}>
+                <Img src={img} alt={alt} />
+              </ImgWrapper>
             </InfoColunm>
           </InfoRow>
         </Container>
