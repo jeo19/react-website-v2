@@ -3,7 +3,7 @@ import React from "react";
 import {
   InfoSec,
   InfoRow,
-  InfoColunm,
+  InfoColumn,
   TextWrapper,
   TopLine,
   Heading,
@@ -34,7 +34,7 @@ const InfoSection = ({
       <InfoSec lightBg={lightBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
-            <InfoColunm>
+            <InfoColumn>
               <TextWrapper>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
@@ -45,12 +45,12 @@ const InfoSection = ({
                   </Button>
                 </Link>
               </TextWrapper>
-            </InfoColunm>
-            <InfoColunm>
+            </InfoColumn>
+            <InfoColumn>
               <ImgWrapper start={start}>
                 <Img src={img} alt={alt} />
               </ImgWrapper>
-            </InfoColunm>
+            </InfoColumn>
           </InfoRow>
         </Container>
       </InfoSec>
