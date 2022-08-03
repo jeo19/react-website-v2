@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  FooterContainer,
+  FooterSubscription,
+  FooterSubHeading,
+  FooterSubText,
+  Form,
+  FormInput,
+} from "./Footer.elements";
+import { Button } from "../../globalStyles";
 
 const Footer = () => {
   return (
