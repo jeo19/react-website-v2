@@ -6,6 +6,11 @@ import {
   FooterSubText,
   Form,
   FormInput,
+  FooterLinksContainer,
+  FooterLinksWrapper,
+  FooterLinkItems,
+  FooterLinkTitle,
+  FooterLink,
 } from "./Footer.elements";
 import { Button } from "../../globalStyles";
 
@@ -24,14 +29,14 @@ const Footer = () => {
       </FooterSubscription>
       <FooterLinksContainer>
         <FooterLinksWrapper>
-          <FooterLinksItems>
-            <FooterLinksTitle></FooterLinksTitle>
+          <FooterLinkItems>
+            <FooterLinkTitle>About Us</FooterLinkTitle>
             <FooterLink to="/sign-up">How it works</FooterLink>
             <FooterLink to="/">Testimonials</FooterLink>
             <FooterLink to="/">Careers</FooterLink>
             <FooterLink to="/">Investors</FooterLink>
             <FooterLink to="/">Terms of Service</FooterLink>
-          </FooterLinksItems>
+          </FooterLinkItems>
           <FooterLinkItems>
             <FooterLinkTitle>Contact Us</FooterLinkTitle>
             <FooterLink to="/">Contact</FooterLink>
