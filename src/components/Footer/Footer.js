@@ -11,6 +11,11 @@ import {
   FooterLinkItems,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  SocialIcon,
+  WebsiteRights,
 } from "./Footer.elements";
 import { Button } from "../../globalStyles";
 
@@ -62,6 +67,15 @@ const Footer = () => {
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
+      <SocialMedia>
+        <SocialMediaWrap>
+          <SocialLogo>
+            <SocialIcon />
+            ULTRA
+          </SocialLogo>
+          <WebsiteRights>ULTRA © 2022</WebsiteRights>
+        </SocialMediaWrap>
+      </SocialMedia>
     </FooterContainer>
   );
 };
